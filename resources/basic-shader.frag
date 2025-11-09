@@ -11,12 +11,12 @@ void main()
     vec2 uv = pos;
     vec2 st = texCoord.st;
 
-    // Example: just return black (as in original)
+    // Return black
     vec4 color = vec4(0.0);
 
     // Write output color
     gl_FragColor = color;
 
-    // If you want to sample the texture:
+    // sample the texture
     gl_FragColor = texture2D(image, st);
 }
