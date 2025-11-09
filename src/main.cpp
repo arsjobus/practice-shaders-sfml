@@ -74,6 +74,8 @@ int main() {
         float scale = 1.f + 0.25f * std::sinf(time * 2.f * 3.14159f); // pulsate between 0.75x and 1.25x
         rectangle.setScale({scale, scale});
 
+        shader.setUniform("time", time);
+        
         window.clear(sf::Color::Black);
         window.draw(rectangle, &shader);
         window.display();
