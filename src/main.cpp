@@ -35,7 +35,7 @@ int main() {
 
     sf::Shader shader;
     std::string vertAddress = "resources/basic-shader.vert";
-    std::string fragAddress = "resources/basic-shader.frag";
+    std::string fragAddress = "resources/psychedelic-shader.frag";
 
     if (!shader.loadFromFile(vertAddress, fragAddress))
     {
