@@ -4,7 +4,7 @@
 #include <iostream>
 
 int main() {
-    sf::Vector2f windowSize = {800.f, 600.f};
+    sf::Vector2f windowSize = {1280.f, 720.f};
 
     sf::RenderWindow window(
         sf::VideoMode({(unsigned int)windowSize.x, (unsigned int)windowSize.y}),
@@ -30,6 +30,8 @@ int main() {
         std::cerr << "Failed to load image.png" << std::endl;
         return -1;
     }
+    texture.setSmooth(true);
+    texture.generateMipmap();
 
     sf::Shader shader;
     std::string vertAddress = "resources/shader.vert";
