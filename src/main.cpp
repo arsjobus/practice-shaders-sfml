@@ -34,8 +34,8 @@ int main() {
     texture.generateMipmap();
 
     sf::Shader shader;
-    std::string vertAddress = "resources/shader.vert";
-    std::string fragAddress = "resources/shader.frag";
+    std::string vertAddress = "resources/basic-shader.vert";
+    std::string fragAddress = "resources/basic-shader.frag";
 
     if (!shader.loadFromFile(vertAddress, fragAddress))
     {
